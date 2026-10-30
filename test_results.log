@@ -1,0 +1,121 @@
+==============================================================
+ HW3_Stubs_solved — полный вывод запуска тестов
+ Дата запуска: 2026-10-17 22:20:47 UTC
+==============================================================
+
+### ОС
+PRETTY_NAME: Ubuntu 26.04.1 LTS
+Linux 6.18.33.2-microsoft-standard-WSL2 x86_64 GNU/Linux
+
+### Python
+Python 3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+
+### Java
+openjdk version "21.0.12.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Corretto-21.0.12.12.1 (build 21.0.12.1+12-LTS)
+OpenJDK 64-Bit Server VM Corretto-21.0.12.12.1 (build 21.0.12.1+12-LTS, mixed mode, sharing)
+JAVA_HOME=/home/Egor/.local/opt/amazon-corretto-21.0.12.12.1-linux-x64
+
+### Порт 7000 до запуска
+свободен
+
+### Зависимости (.venv, pip freeze)
+certifi==2026.7.22
+charset-normalizer==3.5.2
+idna==3.20
+iniconfig==2.3.1
+javaobj-py3==0.4.4
+packaging==26.3
+pluggy==1.7.0
+pytest==8.1.1
+requests==2.32.5
+urllib3==2.8.0
+
+### Доказательство использования оригинальной javaobj-py3
+javaobj.__file__ = /mnt/d/dzchek/HW3_Stubs_solved/.venv/lib/python3.14/site-packages/javaobj/__init__.py
+JavaInt = <class 'javaobj.v2.transformers.JavaInt'>
+
+### Команда запуска
+$ python -m pytest -v     (python = .venv/bin/python, cwd = /mnt/d/dzchek/HW3_Stubs_solved)
+--------------------------------------------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-8.1.1, pluggy-1.7.0 -- /mnt/d/dzchek/HW3_Stubs_solved/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/d/dzchek/HW3_Stubs_solved
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 71 items
+
+tests/ru/hse/client/TestServerClientSystem.py::TestServerClientSystem::test_client_register_success PASSED [  1%]
+tests/ru/hse/client/TestServerClientSystem.py::TestServerClientSystem::test_client_login_success PASSED [  2%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_login_success PASSED [  4%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_call_login_invalid_credentials PASSED [  5%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_call_login_already_logged_remote PASSED [  7%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_call_login_already_logged_local PASSED [  8%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_logout_success PASSED [  9%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_logout_not_logged_remote PASSED [ 11%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_logout_not_logged_local PASSED [ 12%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_account_manager_init_null_argument_first PASSED [ 14%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_account_manager_init_null_argument_second PASSED [ 15%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_account_manager_init_null_argument_both PASSED [ 16%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_login_null_argument_first PASSED [ 18%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_login_null_argument_second PASSED [ 19%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_logout_null_account PASSED [ 21%]
+tests/ru/hse/client/TestServerlessAccountManagerAuth.py::TestServerlessAccountManagerAuth::test_logout_incorrect_session PASSED [ 22%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_deposit_no_source PASSED [ 23%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_deposit_success PASSED [ 25%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_deposit_exceptions[2] PASSED [ 26%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_deposit_exceptions[11] PASSED [ 28%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_deposit_exceptions[5] PASSED [ 29%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_withdraw_no_source PASSED [ 30%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_withdraw_no_money PASSED [ 32%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_withdraw_success PASSED [ 33%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_withdraw_exceptions[2] PASSED [ 35%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_withdraw_exceptions[11] PASSED [ 36%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_withdraw_exceptions[5] PASSED [ 38%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_get_balance_no_source PASSED [ 39%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_get_balance_success PASSED [ 40%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_get_balance_exceptions[2] PASSED [ 42%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_get_balance_exceptions[11] PASSED [ 43%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_get_balance_exceptions[5] PASSED [ 45%]
+tests/ru/hse/client/TestServerlessAccountModuleData.py::TestServerlessAccountModuleData::test_account_get_login PASSED [ 46%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_login_correct_success PASSED [ 47%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_login_exceptions[11] PASSED [ 49%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_login_exceptions[3] PASSED [ 50%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_login_exceptions[1] PASSED [ 52%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_logout_login_correct_success PASSED [ 53%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_login_login_already_logged PASSED [ 54%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_logout_not_logged_remote PASSED [ 56%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_logout_not_logged_local PASSED [ 57%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_logout_logged_success PASSED [ 59%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_logout_exceptions[11] PASSED [ 60%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_logout_exceptions[5] PASSED [ 61%]
+tests/ru/hse/client/TestServerlessClientIntegrationAuth.py::TestServerlessClientIntegrationAuth::test_client_double_logout_logged_success PASSED [ 63%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_get_balance_correct_success PASSED [ 64%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_get_balance_local_not_logged_exceptions PASSED [ 66%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_get_balance_exceptions[2] PASSED [ 67%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_get_balance_exceptions[11] PASSED [ 69%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_get_balance_exceptions[5] PASSED [ 70%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_correct_success PASSED [ 71%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_correct_get_balance_test_success PASSED [ 73%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_local_not_logged_exception PASSED [ 74%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_not_logged_exception_get_balance PASSED [ 76%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_exceptions[2] PASSED [ 77%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_exceptions[11] PASSED [ 78%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_exceptions[5] PASSED [ 80%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_exceptions_get_balance[2] PASSED [ 81%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_exceptions_get_balance[11] PASSED [ 83%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_deposit_exceptions_get_balance[5] PASSED [ 84%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_withdraw_no_money PASSED [ 85%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_withdraw_successful PASSED [ 87%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_withdraw_correct_balance_success PASSED [ 88%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_withdraw_not_logged_exception PASSED [ 90%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_withdraw_not_logged_get_balance PASSED [ 91%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_withdraw_exceptions[2] PASSED [ 92%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_withdraw_exceptions[11] PASSED [ 94%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_withdraw_exceptions[5] PASSED [ 95%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_withdraw_exceptions_get_balance[2] PASSED [ 97%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_withdraw_exceptions_get_balance[11] PASSED [ 98%]
+tests/ru/hse/client/TestServerlessClientIntegrationData.py::TestServerlessClientIntegrationData::test_client_withdraw_exceptions_get_balance[5] PASSED [100%]
+
+============================= 71 passed in 11.14s ==============================

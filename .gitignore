@@ -1,0 +1,18 @@
+# Виртуальное окружение
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# pytest
+.pytest_cache/
+
+# Состояние учебного Java-сервера (создаётся при запуске)
+server/accounts.*
+server/*.log
+
+# JAR-файлы курса: права на распространение не подтверждены, в Git не включаются
+server/*.jar
